@@ -1,0 +1,96 @@
+<html lang="ja">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width" />
+        <title>宇賀神社</title>
+        <link href="styles/style.css" rel="stylesheet" />
+        <link rel="icon" href="images/shrine.ico"/>
+        <!--font-->
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@100..900&family=Roboto+Mono:ital,wght@0,100..700;1,100..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--ヘッダー-->
+        <header>
+            <div class="header"></div>
+            <nav class="top-logo">
+                <img src="images/logo.png" alt="logo" class="logo" />
+                <p class="top1"><a class="top">宇賀神社</a></p>
+            </nav>
+            <nav class="top-text">
+                <p class="top2"><a class="top"><div class="btn0" onclick="scrollToDescription()">Description</div></a></p>
+                <div class="line"></div>
+                <p class="top2"><a class="top"><div class="btn1" onclick="scrollToHistory()">History</div></a></p>
+        </header>
+        <!--メイン画像-->
+        <div class="title_images">
+            <img src="images/shrine_1.png" alt="神社" class="main_image" />
+            <h1 class="main_title"><span class="ti">宇賀神社</span></h1>
+        </div>
+        <div class="gradient"></div>
+        <!--本文-->
+        <nav class="main_texts">
+            <div class="main_text1">
+            <h1 class="big_title" id="b0"><span class="uga">宇賀神社</span>とは</h1>
+            <p class="main_sentence"><span class="u">宇賀神社</span>(うがじんじゃ、宇賀神神社とも呼ばれる)とは、東京都内に位置する幸福と学問の神様として知られる宇賀神様を祀る神社である。創建は比較的新しく、現代の学生たちの間で自然発生的に信仰が広まったことがその始まりとされている。</p>
+            <br />
+            <h1 class="little_title">御祭神と御利益</h1>
+            <p class="main_sentence">主祭神である宇賀神様は、特に試験合格と学業成就の御利益があるとされる。特筆すべきは、定期試験や入学試験の前に参拝する学生が多いことである。神社では「合格鉛筆」と呼ばれる特別な御守りが授与され、この鉛筆で受験に臨むと良い結果が得られるという言い伝えがある。</p>
+            <br />
+            <h1 class="little_title">境内の様子</h1>
+            <p class="main_sentence">境内には、学問の象徴である「知恵の杜」と呼ばれる小さな竹林があり、その中を通り抜けることで知識が身につくと言われている。また、「学力向上の石段」は108段あり、全ての段を上ることで志望校合格が叶うという言い伝えも存在する。</p>
+            <br />
+            <h1 class="little_title">年中行事</h1>
+            <p class="main_sentence">毎年4月には「学業開運祭」が催され、新学期を迎える学生たちで賑わいを見せる。また、試験シーズン前には「必勝祈願祭」が執り行われ、多くの受験生が参拝に訪れる。</p>
+            <br />
+            <h1 class="little_title">参拝作法</h1>
+            <ul>
+                <li class="main_sentence">二礼二拍手一礼の後、「うがみ」と三回唱えることが推奨される</li>
+                <li class="main_sentence">参拝の際は必ず筆記用具を持参することが良いとされる</li>
+                <li class="main_sentence">帰り際に「知恵の杜」を三周することで、特別な御利益があるという</li>
+            </ul>
+            <br />
+            <h1 class="little_title">アクセス</h1>
+            <p class="main_sentence">最寄り駅から徒歩15分。参道には学生向けの文具店や軽食店が並び、休日には多くの参拝客で賑わいを見せている。駐車場は20台程度完備されているが、試験シーズンは混雑が予想されるため、公共交通機関の利用が推奨される。</p>
+            <p class="text_box">境内での写真撮影は可能だが、他の参拝客の迷惑にならないよう配慮が必要。<br />また、受験シーズン中は特に静寂が保たれるよう、参拝者の協力が求められている。</p>
+            <br />
+            <div class="main_sentence_line"></div>
+            <br />
+            <h1 class="big_title" id="b1"><span class="uga">宇賀神社</span>の歴史</h1>
+            <p class="main_sentence">宇賀神神社の歴史は、現代の学生文化と深く結びついている。1980年代後半、当時の大学受験生たちが自然発生的に集まり始めた場所に、地域住民の要望により小さな祠が建立されたことがその始まりである。</p>
+            <p class="main_sentence">当初は、受験生たちが勉強の合間に休憩を取る場所として知られていたが、ある受験生が祠に参拝した後に難関大学に合格したという噂が広まり、次第に「学問の神様」としての信仰が形成されていった。この口コミは1990年代初頭にかけて急速に広がり、参拝者数が増加の一途を辿った。</p>
+            <br />
+            <h1 class="little_title">創建と発展</h1>
+            <p class="main_sentence">1992年、地域の有志による寄付と行政の支援を受け、現在の本殿が建立された。設計には当時の建築学者が関わり、伝統的な神社建築様式を基調としながらも、現代的な要素を取り入れた独特の外観が特徴となっている。</p>
+            <p class="main_sentence">境内の整備も段階的に進められ、1995年には「知恵の杜」として知られる竹林が植樹され、1997年には「学力向上の石段」が完成。これらの施設は、参拝者の信仰心と学業への意欲を象徴する重要な要素として定着していった。</p>
+            <br />
+            <h1 class="little_title">信仰の広がり</h1>
+            <p class="main_sentence">2000年代に入ると、インターネットの普及とともに宇賀神神社の評判は全国に広がった。特に、受験生の間で「合格鉛筆」の効果が話題となり、遠方からの参拝者も増加。2005年には年間参拝者数が10万人を突破する大きな神社へと成長を遂げた。</p>
+            <p class="main_sentence">2010年代には、海外からの留学生の間でも人気を集めるようになり、多言語の案内板の設置や、国際的な文化交流の場としての機能も備えるようになった。特に、アジアからの留学生による参拝が増加し、異文化交流の拠点としての側面も持つようになっている。</p>
+            <br />
+            <h1 class="little_title">現代における役割</h1>
+            <p class="main_sentence">近年では、単なる学業成就の祈願所としてだけでなく、若者たちの精神的な支えとしての役割も担っている。悩みを抱える学生たちの相談所としての機能も備え、神職による進路相談や、学生ボランティアによる学習支援活動なども行われている。</p>
+            <p class="main_sentence">また、伝統的な神社行事と現代的なイベントを融合させた独自の文化も形成されている。例えば、毎年開催される「学業開運祭」では、伝統的な神事と共に、学生たちによる文化祭的な催しも行われ、世代を超えた交流の場となっている。</p>
+            <br />
+            <h1 class="little_title">社会的影響</h1>
+            <p class="main_sentence">宇賀神神社の存在は、現代の教育文化にも大きな影響を与えている。多くの教育機関が修学旅行や課外活動の一環として訪れるようになり、教育と信仰の調和のあり方を示す先進的な事例として、研究者からも注目を集めている。</p>
+            <p class="main_sentence">さらに、近年では環境保護活動にも力を入れており、境内の自然保護や、環境教育の場としての活用も進められている。このように、宇賀神神社は伝統的な信仰の場としての機能を保ちながら、現代社会のニーズに応える形で常に進化を続けている。</p>
+            <br />
+            <div class="main_sentence_line"></div>
+        </nav>
+        <!--credit-->
+        <br />
+        <p class="credits">制作：竹原怜威<br />画像：Wikipedia 延暦寺<br />この神社はフィクションです。"まだ"存在しません。</p>
+
+
+        
+        <script src="scripts/main.js "></script>
+    </body>
+</html>
