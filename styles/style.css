@@ -110,7 +110,7 @@ body{
     transition: transform 0.5s;
 }
 
-@media screen and (max-width:786px){
+@media (max-width:768px){
     top: -23.75vw;
 }
 
@@ -277,4 +277,5 @@ a:hover::after {
     margin: 0 0 0 12.5vw;
     padding-bottom: 50px;
 }
+
 
