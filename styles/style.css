@@ -110,6 +110,10 @@ body{
     transition: transform 0.5s;
 }
 
+@media screen and (max-width:786px){
+    top: -23.75vw;
+}
+
 .main_title:hover{
     transform: scale(1);
 }
@@ -273,3 +277,4 @@ a:hover::after {
     margin: 0 0 0 12.5vw;
     padding-bottom: 50px;
 }
+
